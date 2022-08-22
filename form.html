@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        table {
+            border: 0px solid black;
+            background-color: #e9e9e969;
+            width: 100%;
+        }
+        
+        .dbgOuter {
+            text-align: center;
+            padding: 3px 8px 0px 14px;
+            width: auto;
+            font-size: 10.5pt;
+        }
+        
+        #type {
+            position: relative;
+            left: 11px;
+            position: relative;
+            left: 7em;
+            top: 0.5em;
+        }
+        
+        .dbgCont {
+            display: inline-block;
+        }
+        
+        td {
+            text-align: center;
+        }
+        
+        tr {
+            text-align: center;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 70%;
+            padding: 12px;
+            border: 2px solid rgb(165, 163, 163);
+            border-radius: 18px;
+        }
+        
+        label {
+            text-align: right;
+            float: right;
+            margin-right: 2em;
+            margin-top: 0.7em;
+            color: #000000;
+            font-weight: bold;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+        
+        h5 {
+            font-weight: normal;
+        }
+        
+        h1 {
+            color: rgb(184, 51, 11);
+        }
+        
+        samp {
+            font-weight: normal;
+        }
+        
+        input[type=submit] {
+            background-color: #ff0000;
+            color: white;
+            font-size: 18px;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #31d610;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 70px;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        
+        .ftable {
+            border-radius: 5px;
+            background-color: #f2f2f283;
+            padding: 20px;
+        }
+        
+        .dbgOuter {
+            text-align: center;
+            padding: 3px 8px 0px 14px;
+            width: auto;
+            font-size: 10.5pt;
+        }
+        
+        #type {
+            position: relative;
+            left: 11px;
+            position: relative;
+            left: 7em;
+            top: 0.5em;
+        }
+        
+        .dbgCont {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <center>
+        <h1>COMMERCIAL CREDIT AGREEMENT</h1>
+    </center>
+
+    <div class="container">
+        <form id="form">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname"><b>CUSTOMER'S LEGAL NAME</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="fname" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">COSTUMER'S TRADE NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lname" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="address">ADDRESS</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="address" name="address" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="pobox">P.O.BOX</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="pobox" name="pobox" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="cname">CITY</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cname" name="cname" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="pname">PROVINCE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="pname" name="pname" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="postalcode">POSTAL CODE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="postalcode" name="postalcode" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="tphone">TELEPHONE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="tphone" name="tphone" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="cel">CELLULAR</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cel" name="cel" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Business Legal form</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                    <optgroup label="Choose">
+                    <option value="corporation">CORPORATION</option>
+                    <option value="partnership">PARTNERSHIP</option>
+                    <option value="properietorship">PROPRIETORSHIP</option>
+                    <option value="other">OTHER</option>
+                    
+                </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lfb">LINE OF BUSINESS</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lfb" name="lfb" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">NO. OF EMPLOYEES</label>
+                </div>
+                <div class="col-75">
+                    <select id="noofemployees" name="noofemployees">
+                    <optgroup label="Choose">
+                    <option value="1-4">1-4</option>
+                    <option value="5-14">5-14</option>
+                    <option value="15-19">15-19</option>
+                    <option value="20+">20+</option>
+                    
+                </select>
+                </div>
+            </div>
+
+            <div>
+                <label for="date" style="text-align:right; float: left; margin-bottom:1em; position: relative; left:3.5em">DATE OPPERATION BEGAN <br><samp>(under present ownership)</samp></label>
+                <input type="date" id="date" name="date" style="position: relative; left:4.4em; top:1.5em">
+            </div>
+
+            <hr noshade size="5" , width="100%">
+
+            <table>
+                <tr>
+                    <th>OFFICERS AND DIRECTORS / PARTNERS OR SHAREHOLDERS / PROPRIETOR</th>
+
+                </tr>
+                <tr>
+                    <td>Please complete the information</td>
+                </tr>
+            </table>
+            <hr noshade size="5" , width="90%">
+            <br>
+            <div class="ftable">
+                <div class="row">
+                    <center>
+                        <h3>No.1</h3>
+                    </center>
+                    <div class="col-25">
+                        <label for="name1">NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name1" name="name1" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="title1">TITLE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="title1" name="title1" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sin1">S.I.N. #</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="sin1" name="sin1" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <hr noshade size="5" , width="70%">
+
+            <div class="ftable">
+                <div class="row">
+                    <center>
+                        <h3>No.2</h3>
+                    </center>
+                    <div class="col-25">
+                        <label for="name2">NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name2" name="name2" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="title2">TITLE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="title2" name="title2" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sin2">S.I.N. #</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="sin2" name="sin2" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <hr noshade size="5" , width="70%">
+
+            <div class="ftable">
+                <div class="row">
+                    <center>
+                        <h3>No.3</h3>
+                    </center>
+                    <div class="col-25">
+                        <label for="name3">NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name3" name="name3" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="title3">TITLE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="title3" name="title3" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sin3">S.I.N. #</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="sin3" name="sin3" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="apc">ACCOUNTS PAYABLE CONTACT</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="apc" name="apc" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="tele">TELEPHONE <br><samp>(If different from business number above)</samp></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="tele" name="tele" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sr">SPECIAL REQUIREMENTS?</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sr" name="sr" placeholder="">
+                </div>
+            </div>
+
+            <hr noshade size="5" , width="100%">
+
+            <table>
+                <tr>
+                    <th>SUPPLIERS REFERENCES</th>
+                </tr>
+            </table>
+            <hr noshade size="5" , width="90%">
+            <br>
+            <p><b id="type">TAX-EXEMPT</b></p>
+            <div class="dbgOuter" style="position: relative; left:4.4em; bottom:2em">
+                <div class="dbgCont">
+                    <input type="checkbox" name="check" onclick="onlyOne(this)">
+                    <label for="yes">Yes</label><br>
+                </div>
+                <div class="dbgCont">
+                    <input type="checkbox" name="check" onclick="onlyOne(this)">
+                    <label for="no">No</label><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="tcn">TAX CERTIFICATE NO</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="tcn" name="tcn" placeholder="">
+                </div>
+            </div>
+            <br>
+            <table>
+                <center>
+                    <h3>SUPPLIER REFERENCES</h3>
+                    <h5>Please write below the name, address and telephone of your suppliers. (max 3 references)</h5>
+                </center>
+            </table>
+            <br>
+            <br>
+            <div class="ftable">
+                <div class="row">
+                    <center>
+                        <h3> SUPPLIER NR.1</h3>
+                    </center>
+                    <center>
+                        <h5>Please write below the name, address and telephone of your suppliers. (max 3 references)</h5>
+                    </center>
+                    <div class="col-25">
+                        <label for="sname1">NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="sname1" name="sname1" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="saddress1">ADDRESS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="saddress1" name="saddress1" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="stel1">TELEPOHONE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="stel1" name="stel1" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <hr noshade size="5" , width="70%">
+
+            <div class="ftable">
+                <div class="row">
+                    <center>
+                        <h3> SUPPLIER NR.2</h3>
+                    </center>
+                    <center>
+                        <h5>Please write below the name, address and telephone of your suppliers. (max 3 references)</h5>
+                    </center>
+                    <div class="col-25">
+                        <label for="sname2">NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="sname2" name="sname2" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="saddress2">ADDRESS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="saddress2" name="saddress2" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="stel2">TELEPOHONE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="stel2" name="stel2" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <hr noshade size="5" , width="70%">
+
+            <div class="ftable">
+                <div class="row">
+                    <center>
+                        <h3> SUPPLIER NR.3</h3>
+                    </center>
+                    <center>
+                        <h5>Please write below the name, address and telephone of your suppliers. (max 3 references)</h5>
+                    </center>
+                    <div class="col-25">
+                        <label for="sname3">NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="sname3" name="sname3" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="saddress3">ADDRESS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="saddress3" name="saddress3" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="stel3">TELEPOHONE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="stel3" name="stel3" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <hr noshade size="5" , width="100%">
+
+            <table>
+                <tr>
+                    <th>FINANCIAL REFERENCES</th>
+                </tr>
+            </table>
+            <hr noshade size="5" , width="90%">
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="bank">BANK</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="bank" name="bank" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="an">ACCOUNT NO.</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="an" name="an" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="branch">BRANCH</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="branch" name="branch" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="telephone">TELEPHONE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="telephone" name="telephone" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="am">Account Manager</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="am" name="am" placeholder="">
+                </div>
+            </div>
+            <p><b id="type">TYPE OF ACCOUNT:</b></p>
+            <div class="dbgOuter" style="position: relative; left:4.4em; bottom:2em">
+                <div class="dbgCont">
+                    <input type="checkbox" id="checking" name="checking" value="checking">
+                    <label for="checking">Checking</label>
+                </div>
+                <div class="dbgCont">
+                    <input type="checkbox" id="Savings" name="Savings" value="Savings">
+                    <label for="Savings">Savings</label>
+                </div>
+                <div class="dbgCont">
+                    <input type="checkbox" id="Loan" name="Loan" value="Loan">
+                    <label for="Loan">Loan</label>
+                </div>
+                <div class="dbgCont">
+                    <input type="checkbox" id="loc" name="loc" value="loc">
+                    <label for="loc">Line of credit</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="date2" style="text-align:right; float: left; margin-bottom:1em; position: relative; left:3.5em">FISCAL YEAR END DATE</label>
+                <input type="date" id="date2" name="date2" style="position: relative; left:5.3em; top:0.5em">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="aocr" style="position: relative; left:80%;">AMOUNT OF CREDIT REQUESTED</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="aocr" name="aocr" placeholder="" style="position: relative; left:40%;">
+                </div>
+            </div>
+            <p><b>HAS THE APPLICANT BUSINESS OR ANY OF ITS OFFICERS, PARTNERS, DIRECTORS OR THE APPLICANT PROPRIETOR, BEEN PREVIOUSLY BANKRUPT:</b></p>
+            <div>
+                <input type="checkbox" id="check" name="check" value="Yes">
+                <label for="check">Yes</label><br>
+                <input type="checkbox" id="nocheck" name="nocheck" value="No">
+                <label for="nocheck">No</label><br>
+            </div>
+
+            <div>
+                <label for="date3">IF YES, PLEASE COMPLETE THE DATE </label>
+                <input type="date" id="date3" name="date3">
+            </div>
+            <h5><i><b>By signing below, the Customer confirms that it has read, understands, and agrees to be bound by the Credit Agreement found at page 2 of this Credit Application. The Customer acknowledges that the Customer’s agreement with the terms and conditions
+                of the Credit Agreement is a condition precedent to the granting of credit privileges to the Customer by 2435930 Ontario Inc. or any of their affiliates or subsidiaries. The Customer hereby authorizes TSP to receive and exchange credit
+                information in connection with the Customer’s Application for Credit and any ongoing credit transactions including credit agency and background checks. The Customer authorizes the bank named in the Application for Credit to release information
+                to TSP.</b></i></h5>
+            <div>
+                <input type="checkbox" id="yes" name="yes" value="yes">
+                <label for="yes" </label><br>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nlm">Name & Last name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nlm" name="nlm" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="t4">TITLE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="t4" name="t4" placeholder="">
+                </div>
+            </div>
+            <div>
+                <label for="date4">Date </label>
+                <input type="date" id="date4" name="date4">
+            </div>
+            <p>Signature</p>
+
+            <hr noshade size="5" , width="100%">
+
+            <table>
+                <tr>
+                    <th>COMMERCIAL CREDIT AGREEMENT</th>
+                </tr>
+                <tr>
+                    <td>2435930 Ontario Inc.</td>
+                </tr>
+            </table>
+            <hr noshade size="5" , width="90%">
+            <br>
+
+            <p>Subject to the issuance of a Credit Approval Letter, 2435930 Ontario Inc. and any affiliates or subsidiaries thereof (collectively referred to in this agreement as "TSP") agrees to grant credit privileges to the CUSTOMER (as defined in the
+                Application for Credit) on the following terms and conditions:</p>
+            <h5><b>1.</b> THIS AGREEMENT AND ALL MATTERS RELATING TO THE GRANT OF CREDIT PRIVILEGES AND THE PROVISION OF PRODUCTS AND SERVICES BY FBM TO THE CUSTOMER SHALL BE GOVERNED BY TSP’s CANADA TERMS AND CONDITIONS OF SALE. THE CUSTOMER EXPRESSLY ACKNOWLEDGES
+                AND AGREES THAT THE TERMS AND CONDITIONS FORM PART OF THIS AGREEMENT AND ARE BINDING ON FBM AND THE CUSTOMER. THE CUSTOMER EXPRESSLY WARRANTS THAT THEY HAVE REVIEWED AND UNDERSTAND THE TERMS AND CONDITIONS, THEY AGREE TO BE BOUND BY THE
+                TERMS AND CONDITIONS, AND THEY UNDERSTAND THAT THE CUSTOMER’S AGREEMENT WITH THE TERMS AND CONDITIONS IS A PRE-CONDITION TO THE GRANTING OF CREDIT TO THE CUSTOMER BY FBM.<br> <b>2.</b> TSP shall grant the Customer credit to purchase products
+                and services to the amount of the Credit Limit (as defined in the Credit Approval Letter).<br> <b>3.</b> The Customer agrees to pay all amounts invoiced during any one month on or before the Required Payment Day (as defined in the Credit
+                Approval Letter), and to pay a service charge at the Late Payment Service Charge Rate of 18% annually on invoiced amounts unpaid on the Required Payment Day.<br> <b>4.</b> Where TSP furnishes products and services to the Customer for an
+                improvement or project which falls under one general contract, then for the purposes of the Builders’ Lien Act, Mechanics Lien Law, or similar legislation (as applicable) all such building materials and supplies shall be deemed to be provided
+                under one continuous contract. TSP may, at its sole discretion, apply payments to such invoices as it determines appropriate.<br> <b>5.</b> The Customer shall pay to TSP the costs and expenses incurred by TSP to recover any overdue amounts,
+                including any legal fees and disbursements incurred by TSP on a full indemnity basis, whether described as solicitor and their own client costs, special costs, or otherwise, with interest on such costs at the Late Payment Service Charge
+                Rate.
+                <br> <b>6.</b> No extensions, indulgences, discounts or waivers granted by TSP to the Customer shall in any way affect or prejudice the rights of TSP to recover sums due and owing by the Customer and to enforce strictly the terms of this
+                agreement.
+                <br> <b>7.</b> TSP shall have the right, in its sole and absolute discretion, to amend the Credit Limit, Required Payment Day, Late Payment Service Charge Rate or any other term of this agreement, from time to time, or without notice to
+                cancel this agreement at any time.<br> <b>8.</b> The Customer hereby warrants and confirms that the information provided in the Application for Credit is true, accurate and complete.<br> <b>9.</b> The Customer hereby authorizes TSP to
+                receive and exchange credit information in connection with the Customer’s Application for Credit and any ongoing credit transactions including credit agency and background checks. The Customer authorizes the bank named in the Application
+                for Credit to release information to TSP.<br> <b>10.</b> A facsimile or electronic transmission of this Application for Credit and Credit Agreement is sufficient for acceptance of liability.</h5>
+
+            <hr noshade size="5" , width="100%">
+
+            <table>
+                <tr>
+                    <th>CONTRACT FOR THE PURCHASE AND SALE OF BUILDING MATERIALS</th>
+                </tr>
+            </table>
+            <hr noshade size="5" , width="90%">
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="t5">IN CONSIDERATION OF 2435930 Ontario INC. providing building materials to  from time to time upon credit.<br> <samp>Company Name (the “Purchaser”)</samp></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="t5" name="t5" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="t5">The Purchaser and  hereby jointly and severally agree to pay for those building materials in full by the Required Payment Day, failing which, interest at the
+                rate of 18% per annum on any unpaid balance shall be payable.<br> <samp>(Individual’s Name (the “Co-Purchaser”)</samp></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="t6" name="t6" placeholder="">
+                </div>
+            </div>
+            <h5>The PURCHASER and CO-PURCHASER also jointly and severally agree to pay full indemnity costs, whether described as solicitor and their own client costs, special costs, or otherwise, and any and all other costs incurred in the collection of
+                any overdue account. The CO-PURCHASER hereby waives the right to require 2435930 Ontario Inc. or their respective affiliates or subsidiaries (“Toronto Spray Foam Parts”) to proceed against the PURCHASER or to proceed against or to exhaust
+                any security held from the PURCHASER or to pursue any other remedy whatsoever which may be available to TSP before proceeding against the CO-PURCHASER. TSP is authorized to obtain credit information on the PURCHASER and CO-PURCHASER, including
+                cause to conduct personal credit investigation. SIGNING THIS AGREEMENT AS “CO-PURCHASER” MEANS PERSONAL LIABILITY</h5>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="t6">PURCHASER<br> <samp>(company name)</samp></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="t10" name="t10" placeholder="">
+                </div>
+            </div>
+            <p>PURCHASER SIGNATURE</p>
+            <samp>(Signatures of Authorized Officer(s))</samp>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="t7">CO-PURCHASER<br> <samp>(company name)</samp></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="t7" name="t7" placeholder="">
+                </div>
+            </div>
+            <p>CO-PURCHASER SIGNATURE <br><samp>(Individual's signature)</samp></p>
+            <hr noshade size="5" , width="100%">
+
+            <table>
+                <tr>
+                    <th>COMMERCIAL CREDIT AGREEMENT</th>
+
+                </tr>
+                <tr>
+                    <td>2435930 Ontario Inc.<br> AN APPLICANT FOR CREDIT WHO IS A SOLE PROPRIETOR SHALL PROVIDE THE FOLLOWING ADDITIONAL INFORMATION:<br> (all Items with an ** asterisk must be completed)</td>
+                </tr>
+            </table>
+            <hr noshade size="5" , width="90%">
+            <br>
+            <div>
+                <label for="birthday">DATE OF BIRTH</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="sin2">S.I.N.</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sn2" name="sn2" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="ms">MARITAL STATUS</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ms" name="ms" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sm">SPOUSE NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sm" name="sm" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nod">NO. OF DEPENDENTS</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nod" name="nod" placeholder="">
+                </div>
+            </div>
+
+            <br>
+            <p><b>RESIDENCE</b></p>
+            <div>
+                <input type="checkbox" id="owned1" name="owned1" value="OWNED" onclick="onlyOne(this)">
+                <label for="owned1">OWNED</label><br>
+                <input type="checkbox" id="rented" name="rented" value="RENTED" onclick="onlyOne(this)">
+                <label for="rented">RENTED</label><br>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="a2">ADDRESS</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="a2" name="a2" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="c2">CITY</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="c2" name="c2" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="p2">PROVINCE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="p2" name="p2" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pob">P.O. BOX</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="pob" name="pob" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pc">POSTAL CODE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="pc2" name="pc2" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="t2">TELEPHONE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="t2" name="t2" placeholder="">
+                </div>
+            </div>
+            <br>
+            <p><b>VECHILE</b></p>
+            <div>
+                <input type="checkbox" id="ownedd" name="ownedd" value="OWNED" onclick="onlyOne(this)">
+                <label for="ownedd">OWNED</label><br>
+                <input type="checkbox" id="leasedd" name="leasedd" value="LEASED" onclick="onlyOne(this)">
+                <label for="leasedd">LEASED</label><br>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="make">MAKE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="make" name="make" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="model">MODEL</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="model" name="model" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="year">YEAR</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="year" name="year" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="plateno">PLATE NO.</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="plateno" name="plateno" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="en2">EMPLOYER NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="en2" name="en2" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Tel">TELEPHONE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Tel" name="Tel" placeholder="">
+                </div>
+            </div>
+            <h3>
+                <center>The undersigned acknowledges that this page is an integral part of the Application for Credit.</center>
+            </h3>
+            <div class="row">
+                <div class="col-25">
+                    <label for="NAME">NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="NAME" name="NAME" placeholder="">
+                </div>
+            </div>
+            <div>
+                <label for="date5">DATE</label>
+                <input type="date" id="date5" name="date5">
+            </div>
+            <p>SIGNATURE</p>
+
+            <hr noshade size="5" , width="100%">
+
+            <table>
+                <tr>
+                    <th>Please read carefully</th>
+                </tr>
+            </table>
+            <hr noshade size="5" , width="90%">
+            <br>
+
+            <p>Thank you for filling all the information. The next steps are:</p>
+            <br>
+            <p>1. We are going to send the completed form to you by email.<br> 2. Please check if the information provided are correct.<br> 3. Then print it and sign whenever your signature is requested.<br> 4. Then scan it and send it back to us at:<br>                INFO@TORONTOSPRAYFOAMPARTS.CA
+                <p>
+                    <h5>Should you have any questions, please do not hesitate to contact us.
+                        <br>
+                        <br> We look forward to joining our network!</h5>
+
+                    <input type="submit" id="button" value="Submit Review" onclick="checker()" onclick="GeneratePdf();">
+        </form>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            function checker() {
+                var name = document.getElementById('fname').value
+                var address = document.getElementById('address').value
+                var comment = document.getElementById('lname').value
+                if (name == null || name == "" || address == null || address == "" || comment == null || comment == "") {
+                    alert("Please fill out all the fields.");
+                } else {
+                    emailjs.init('1c3jOLbrBAQ7Qc8aw')
+
+                    const btn = document.getElementById('button');
+                    document.getElementById('form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        btn.value = 'Submitting...';
+                        const serviceID = 'default_service';
+                        const templateID = 'template_n1atbks';
+                        emailjs.sendForm(serviceID, templateID, this)
+                            .then(() => {
+                                btn.value = 'Submitting';
+                                alert('Thank you for letting us know!');
+                            }, (err) => {
+                                btn.value = 'Submit Review';
+                                alert("Problem");
+                            });
+                    });
+                }
+            }
+        </script>
+        <script>
+            function GeneratePdf() {
+                var element = document.getElementById('form-print');
+                html2pdf(element);
+            }
+        </script>
+</body>
+
+</html>hhh

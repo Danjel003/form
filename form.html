@@ -18,6 +18,49 @@
             padding: 3px 8px 0px 14px;
             width: auto;
             font-size: 10.5pt;
+            position: relative;
+            left: -16em;
+            bottom: 2em;
+        }
+        
+        .dbgOuter2 {
+            text-align: center;
+            padding: 3px 8px 0px 14px;
+            width: auto;
+            font-size: 10.5pt;
+            position: relative;
+            left: 4.4em;
+            bottom: 2em;
+        }
+        
+        .dbgOuter3 {
+            text-align: center;
+            padding: 3px 8px 0px 14px;
+            width: auto;
+            font-size: 10.5pt;
+            position: relative;
+            left: -27em;
+            bottom: 1.5em;
+        }
+        
+        .dbgOuter4 {
+            text-align: center;
+            padding: 3px 8px 0px 14px;
+            width: auto;
+            font-size: 10.5pt;
+            position: relative;
+            left: -14em;
+            bottom: 1.5em;
+        }
+        
+        .dbgOuter5 {
+            text-align: center;
+            padding: 3px 8px 0px 14px;
+            width: auto;
+            font-size: 10.5pt;
+            position: relative;
+            left: -14em;
+            bottom: 1.5em;
         }
         
         #type {
@@ -28,16 +71,138 @@
             top: 0.5em;
         }
         
+        #type2 {
+            position: relative;
+            left: 11px;
+            position: relative;
+            left: 10em;
+            top: 0.5em;
+        }
+        
+        #type3 {
+            position: relative;
+            left: 11px;
+            position: relative;
+            left: 11em;
+            top: 0.5em;
+        }
+        
+        #type4 {
+            position: relative;
+            left: 11px;
+            position: relative;
+            left: 12.3em;
+            top: 0.5em;
+        }
+        
         .dbgCont {
             display: inline-block;
         }
         
+        .date {
+            position: relative;
+            left: 4.4em;
+            top: 1.5em
+        }
+        
+        #date1a {
+            text-align: right;
+            float: left;
+            margin-bottom: 1em;
+            position: relative;
+            left: 3.5em
+        }
+        
+        #date {
+            position: relative;
+            left: 5.3em;
+            top: 0.5em
+        }
+        
+        #date2a {
+            text-align: right;
+            float: left;
+            margin-bottom: 1em;
+            position: relative;
+            left: 4.5em
+        }
+        
+        #date2 {
+            position: relative;
+            left: 6em;
+            top: 0.5em
+        }
+        
+        #date3a {
+            text-align: right;
+            float: left;
+            margin-bottom: 2em;
+            position: relative;
+            left: -3em
+        }
+        
+        #date3 {
+            position: relative;
+            left: -2em;
+            top: 0.5em
+        }
+        
+        #date4a {
+            text-align: right;
+            float: left;
+            margin-bottom: 2em;
+            position: relative;
+            left: 14.17em
+        }
+        
+        #date4 {
+            position: relative;
+            left: 17em;
+            top: 1em
+        }
+        
+        #birthday1 {
+            text-align: right;
+            float: left;
+            margin-bottom: 2em;
+            position: relative;
+            left: 8.4em
+        }
+        
+        #birthday {
+            position: relative;
+            left: 10.5em;
+            top: 0.5em
+        }
+        
+        #date5a {
+            text-align: right;
+            float: left;
+            margin-bottom: 2em;
+            position: relative;
+            left: 14.2em
+        }
+        
+        #date5 {
+            position: relative;
+            left: 17.2em;
+            top: 0.5em
+        }
+        /*checkbox for text yes*/
+        /*#yes1 {
+            position: relative;
+            left: -69em;
+            top: 0em
+        }*/
+        
         td {
             text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
         }
         
         tr {
             text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
         }
         
         input[type=text],
@@ -47,6 +212,7 @@
             padding: 12px;
             border: 2px solid rgb(165, 163, 163);
             border-radius: 18px;
+            font-family: "Lucida Console", "Courier New", monospace;
         }
         
         label {
@@ -61,10 +227,16 @@
         
         h5 {
             font-weight: normal;
+            font-family: "Lucida Console", "Courier New", monospace;
         }
         
         h1 {
             color: rgb(184, 51, 11);
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+        
+        p {
+            font-family: "Lucida Console", "Courier New", monospace;
         }
         
         samp {
@@ -80,6 +252,7 @@
             border-radius: 10px;
             cursor: pointer;
             float: right;
+            font-family: "Lucida Console", "Courier New", monospace;
         }
         
         input[type=submit]:hover {
@@ -95,13 +268,28 @@
         .col-25 {
             float: left;
             width: 25%;
-            margin-top: 6px;
+            margin-top: 0px;
+        }
+        /*AMOUNT OF CREDIT REQUSTED*/
+        /*label*/
+        
+        #aocr1 {
+            float: left;
+            width: 25%;
+            margin-top: 0px;
+        }
+        /*input*/
+        
+        #aocr {
+            float: right;
+            width: 75%;
+            margin-top: 0.7em;
         }
         
         .col-75 {
-            float: left;
+            float: right;
             width: 75%;
-            margin-top: 6px;
+            margin-top: 0.7em;
         }
         /* Clear floats after the columns */
         
@@ -239,7 +427,7 @@
 
             <div class="row">
                 <div class="col-25">
-                    <label for="country">Business Legal form</label>
+                    <label for="country">BUSINESS LEGAL FORM</label>
                 </div>
                 <div class="col-75">
                     <select id="country" name="country">
@@ -279,8 +467,8 @@
             </div>
 
             <div>
-                <label for="date" style="text-align:right; float: left; margin-bottom:1em; position: relative; left:3.5em">DATE OPPERATION BEGAN <br><samp>(under present ownership)</samp></label>
-                <input type="date" id="date" name="date" style="position: relative; left:4.4em; top:1.5em">
+                <label for="date" id="date1a">DATE OPPERATION BEGAN <br><samp>(under present ownership)</samp></label>
+                <input type="date" id="date" name="date">
             </div>
 
             <hr noshade size="5" , width="100%">
@@ -423,8 +611,8 @@
             </table>
             <hr noshade size="5" , width="90%">
             <br>
-            <p><b id="type">TAX-EXEMPT</b></p>
-            <div class="dbgOuter" style="position: relative; left:4.4em; bottom:2em">
+            <p><b id="type2">TAX-EXEMPT</b></p>
+            <div class="dbgOuter">
                 <div class="dbgCont">
                     <input type="checkbox" name="check" onclick="onlyOne(this)">
                     <label for="yes">Yes</label><br>
@@ -597,14 +785,14 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="am">Account Manager</label>
+                    <label for="am">ACCOUNT MANAGER</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="am" name="am" placeholder="">
                 </div>
             </div>
             <p><b id="type">TYPE OF ACCOUNT:</b></p>
-            <div class="dbgOuter" style="position: relative; left:4.4em; bottom:2em">
+            <div class="dbgOuter2">
                 <div class="dbgCont">
                     <input type="checkbox" id="checking" name="checking" value="checking">
                     <label for="checking">Checking</label>
@@ -624,40 +812,48 @@
             </div>
 
             <div>
-                <label for="date2" style="text-align:right; float: left; margin-bottom:1em; position: relative; left:3.5em">FISCAL YEAR END DATE</label>
-                <input type="date" id="date2" name="date2" style="position: relative; left:5.3em; top:0.5em">
+                <label for="date2" id="date2a">FISCAL YEAR END DATE</label>
+                <input type="date" id="date2" name="date2">
             </div>
+            <br>
             <div class="row">
                 <div class="col-25">
-                    <label for="aocr" style="position: relative; left:80%;">AMOUNT OF CREDIT REQUESTED</label>
+                    <label for="aocr">AMOUNT OF CREDIT REQUESTED</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="aocr" name="aocr" placeholder="" style="position: relative; left:40%;">
+                    <input type="text" id="aocr" name="aocr" placeholder="">
                 </div>
             </div>
+            <br>
             <p><b>HAS THE APPLICANT BUSINESS OR ANY OF ITS OFFICERS, PARTNERS, DIRECTORS OR THE APPLICANT PROPRIETOR, BEEN PREVIOUSLY BANKRUPT:</b></p>
-            <div>
-                <input type="checkbox" id="check" name="check" value="Yes">
-                <label for="check">Yes</label><br>
-                <input type="checkbox" id="nocheck" name="nocheck" value="No">
-                <label for="nocheck">No</label><br>
+            <div class="dbgOuter3">
+                <div class="dbgCont">
+                    <input type="checkbox" id="check" name="check" value="Yes">
+                    <label for="check">Yes</label><br>
+                </div>
+                <div class="dbgCont">
+                    <input type="checkbox" id="nocheck" name="nocheck" value="No">
+                    <label for="nocheck">No</label><br>
+                </div>
             </div>
 
             <div>
-                <label for="date3">IF YES, PLEASE COMPLETE THE DATE </label>
+                <label for="date3" id="date3a">IF YES, PLEASE COMPLETE THE DATE </label>
                 <input type="date" id="date3" name="date3">
             </div>
+            <br>
+
             <h5><i><b>By signing below, the Customer confirms that it has read, understands, and agrees to be bound by the Credit Agreement found at page 2 of this Credit Application. The Customer acknowledges that the Customer’s agreement with the terms and conditions
                 of the Credit Agreement is a condition precedent to the granting of credit privileges to the Customer by 2435930 Ontario Inc. or any of their affiliates or subsidiaries. The Customer hereby authorizes TSP to receive and exchange credit
                 information in connection with the Customer’s Application for Credit and any ongoing credit transactions including credit agency and background checks. The Customer authorizes the bank named in the Application for Credit to release information
                 to TSP.</b></i></h5>
             <div>
                 <input type="checkbox" id="yes" name="yes" value="yes">
-                <label for="yes" </label><br>
+                <label for="yes"></label><br>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="nlm">Name & Last name</label>
+                    <label for="nlm">NAME & LAST NAME</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="nlm" name="nlm" placeholder="">
@@ -672,7 +868,7 @@
                 </div>
             </div>
             <div>
-                <label for="date4">Date </label>
+                <label for="date4" id="date4a">DATE </label>
                 <input type="date" id="date4" name="date4">
             </div>
             <p>Signature</p>
@@ -773,7 +969,7 @@
             <hr noshade size="5" , width="90%">
             <br>
             <div>
-                <label for="birthday">DATE OF BIRTH</label>
+                <label for="birthday" id="birthday1">DATE OF BIRTH</label>
                 <input type="date" id="birthday" name="birthday">
             </div>
 
@@ -811,12 +1007,16 @@
             </div>
 
             <br>
-            <p><b>RESIDENCE</b></p>
-            <div>
-                <input type="checkbox" id="owned1" name="owned1" value="OWNED" onclick="onlyOne(this)">
-                <label for="owned1">OWNED</label><br>
-                <input type="checkbox" id="rented" name="rented" value="RENTED" onclick="onlyOne(this)">
-                <label for="rented">RENTED</label><br>
+            <p><b id="type3">RESIDENCE</b></p>
+            <div class="dbgOuter4">
+                <div class="dbgCont">
+                    <input type="checkbox" id="owned1" name="owned1" value="OWNED" onclick="onlyOne(this)">
+                    <label for="owned1">OWNED</label><br>
+                </div>
+                <div class="dbgCont">
+                    <input type="checkbox" id="rented" name="rented" value="RENTED" onclick="onlyOne(this)">
+                    <label for="rented">RENTED</label><br>
+                </div>
             </div>
 
             <div class="row">
@@ -868,12 +1068,16 @@
                 </div>
             </div>
             <br>
-            <p><b>VECHILE</b></p>
-            <div>
-                <input type="checkbox" id="ownedd" name="ownedd" value="OWNED" onclick="onlyOne(this)">
-                <label for="ownedd">OWNED</label><br>
-                <input type="checkbox" id="leasedd" name="leasedd" value="LEASED" onclick="onlyOne(this)">
-                <label for="leasedd">LEASED</label><br>
+            <p><b id="type4">VECHILE</b></p>
+            <div class="dbgOuter5">
+                <div class="dbgCont">
+                    <input type="checkbox" id="ownedd" name="ownedd" value="OWNED" onclick="onlyOne(this)">
+                    <label for="ownedd">OWNED</label><br>
+                </div>
+                <div class="dbgCont">
+                    <input type="checkbox" id="leasedd" name="leasedd" value="LEASED" onclick="onlyOne(this)">
+                    <label for="leasedd">LEASED</label><br>
+                </div>
             </div>
 
             <div class="row">
@@ -936,7 +1140,7 @@
                 </div>
             </div>
             <div>
-                <label for="date5">DATE</label>
+                <label for="date5" id="date5a">DATE</label>
                 <input type="date" id="date5" name="date5">
             </div>
             <p>SIGNATURE</p>
